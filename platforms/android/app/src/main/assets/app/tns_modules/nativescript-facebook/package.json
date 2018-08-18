@@ -1,0 +1,96 @@
+{
+  "_from": "nativescript-facebook",
+  "_id": "nativescript-facebook@2.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-qsfl58NjUlKOG1pOXJEyic6WDueCH+Fj/x6ESsx0IP1OrVRO+OVgxu4WcYQBRklD2pBlzqzZedr9bpMy/UT34Q==",
+  "_location": "/nativescript-facebook",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-facebook",
+    "name": "nativescript-facebook",
+    "escapedName": "nativescript-facebook",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-facebook/-/nativescript-facebook-2.2.3.tgz",
+  "_shasum": "fbdbcf467693046f8e1789d21ce4f17b82c8ad00",
+  "_spec": "nativescript-facebook",
+  "_where": "/Users/mac/Desktop/tnsmusiciens/musiciens",
+  "author": {
+    "name": "NativeScript Team",
+    "email": "support@telerik.com",
+    "url": "http://www.telerik.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/nativescript-facebook/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "NativeScript plugin, wrapper of native Facebook SDK for Adroid and iOS.",
+  "devDependencies": {
+    "@angular/common": "~6.0.6",
+    "@angular/compiler": "~6.0.6",
+    "@angular/compiler-cli": "~6.0.6",
+    "@angular/core": "~6.0.6",
+    "nativescript-angular": "~6.0.6",
+    "rxjs": "5.4.2",
+    "tns-core-modules": "^4.0.0",
+    "tns-platform-declarations": "^4.0.0",
+    "tslint": "~5.4.3",
+    "typescript": "~2.7.2",
+    "zone.js": "~0.8.4"
+  },
+  "homepage": "https://github.com/NativeScript/nativescript-facebook",
+  "keywords": [
+    "NativeScript",
+    "TypeScript",
+    "Android",
+    "iOS",
+    "Facebook"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "angeltsvetkov",
+      "email": "angel.tsvetkov@progress.com"
+    },
+    {
+      "name": "Dimitar Tachev",
+      "email": "dimitar.tachev@progress.com"
+    }
+  ],
+  "name": "nativescript-facebook",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/nativescript-facebook.git"
+  },
+  "scripts": {
+    "build": "npm i && tsc && tns plugin build && npm run ngc",
+    "build.iosOnly": "npm i && tsc && npm run ngc",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
+    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
+    "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
+    "demo.ng.android": "npm i && npm run tsc && cd ../demo-angular && tns run android --syncAllFiles",
+    "demo.ng.ios": "npm i && npm run tsc && cd ../demo-angular && tns run ios --syncAllFiles",
+    "ngc": "node --max-old-space-size=8192 ./node_modules/.bin/ngc",
+    "plugin.link": "npm link && cd ../demo-angular && npm link nativescript-camera",
+    "plugin.tscwatch": "tsc -skipLibCheck -w",
+    "prepublishOnly": "npm run build",
+    "tsc": "tsc -skipLibCheck"
+  },
+  "typings": "index.d.ts",
+  "version": "2.2.3"
+}

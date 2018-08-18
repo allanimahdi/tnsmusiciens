@@ -1,0 +1,22 @@
+<GridLayout rows="auto, auto" sdkExampleTitle sdkToggleNavButton>
+
+<StackLayout xmlns="http://www.w3.org/1999/html">
+  <Label row="0" class="h1 Choisissez Votre Style"
+         text="Choisissez votre style"></Label>
+</StackLayout>
+
+  <!-- >> using-selected-index-html -->
+  <StackLayout row="1">
+
+  </StackLayout>
+  <Label row="2" class="lestyle"
+         text="Example: Salsa"></Label>
+  <ListPicker row="3" [items]="genres" [selectedIndex]="index" (selectedIndexChange)="selectedIndexChanged($event)" class="p-12 picker">
+  </ListPicker>
+
+  <Button class="btn-aqua" text="Next Step" (tap)="onButtonTap()"></Button>
+
+
+
+
+</GridLayout>
